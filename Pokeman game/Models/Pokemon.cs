@@ -38,7 +38,7 @@ namespace PokemanGame.Models
 
         public ElementType Type { get; protected set; } // protected set så att endast ärvda klasser kan ändra typen
 
-        // List samling, kan innehålla flera attacker
+        // Lista över attacker som Pokémon kan använda, kan innehålla flera attacker
         public List<Attack> Attacks;
 
         public Pokemon(string name, int level, List<Attack> attacks) // När man skapar en ny Pokémon, måste man skicka in: namn, nivå och lista av attacker
